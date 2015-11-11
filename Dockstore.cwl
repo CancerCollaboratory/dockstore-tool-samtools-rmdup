@@ -3,11 +3,12 @@
 class: CommandLineTool
 
 description: |
-  Usage: samtools index [-bc] [-m INT] <in.bam> [out.index]
+  Remove potential PCR duplicates: if multiple read pairs have identical external coordinates, only retain the pair with highest mapping quality. In the paired-end mode, this command ONLY works with FR orientation and requires ISIZE is correctly set. It does not work for unpaired reads (e.g. two ends mapped to different chromosomes or orphan reads).
+
+  Usage: samtools rmdup [-sS] <input.srt.bam> <out.bam>
   Options:
-    -b       Generate BAI-format index for BAM files [default]
-    -c       Generate CSI-format index for BAM files
-    -m INT   Set minimum interval size for CSI indices to 2^INT [14]
+    -s       Remove duplicates for single-end reads. By default, the command works for paired-end reads only.
+    -S       Treat paired-end reads and single-end reads.
 
 dct:creator:
   foaf:name: Andy Yang
