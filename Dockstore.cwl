@@ -14,7 +14,7 @@ dct:contributor:
   foaf:name: Andy Yang
   foaf:mbox: "mailto:ayang@oicr.on.ca"
 
-dct:author:
+dct:creator:
   "@id": "http://orcid.org/0000-0001-9102-5681"
   foaf:name: "Andrey.Kartashov / Cincinnati Children’s Hospital Medical Center"
   foaf:mbox: "mailto:Andrey.Kartashov@cchmc.org"
