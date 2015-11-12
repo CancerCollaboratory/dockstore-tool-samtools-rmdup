@@ -10,9 +10,16 @@ description: |
     -s       Remove duplicates for single-end reads. By default, the command works for paired-end reads only.
     -S       Treat paired-end reads and single-end reads.
 
-dct:creator:
+dct:contributor:
   foaf:name: Andy Yang
   foaf:mbox: "mailto:ayang@oicr.on.ca"
+
+dct:author:
+  "@id": "http://orcid.org/0000-0001-9102-5681"
+  foaf:name: "Andrey.Kartashov / Cincinnati Children’s Hospital Medical Center"
+  foaf:mbox: "mailto:Andrey.Kartashov@cchmc.org"
+
+dct:description: "Developed for CWL consortium http://commonwl.org/ Original URL: https://github.com/common-workflow-language/workflows"
 
 requirements:
   - class: DockerRequirement
