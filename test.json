@@ -1,0 +1,13 @@
+{
+  "output_name": "out.bam",
+  "input": {
+    "path": "rna.SRR948778.bam",
+    "class": "File"
+  },
+  "pairend_as_se": false,
+  "single_end": false,
+  "rmdup": {
+    "path": "rna.SRR948778.bam",
+    "class": "File"
+  }
+}

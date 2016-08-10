@@ -21,10 +21,11 @@ dct:creator:
 
 dct:description: "Developed at Cincinnati Children’s Hospital Medical Center for the CWL consortium http://commonwl.org/ Original URL: https://github.com/common-workflow-language/workflows"
 
+cwlVersion: draft-3
+
 requirements:
   - class: DockerRequirement
     dockerPull: "quay.io/cancercollaboratory/dockstore-tool-samtools-rmdup"
-  - { import: node-engine.cwl }
 
 inputs:
   - id: "#input"
@@ -56,9 +57,7 @@ outputs:
     type: File
     description: "File with removed duplicates"
     outputBinding:
-      glob:
-        engine: cwl:JsonPointer
-        script: /job/output_name
+      glob: $(inputs.output_name)
 
 baseCommand: ["samtools", "rmdup"]
 
