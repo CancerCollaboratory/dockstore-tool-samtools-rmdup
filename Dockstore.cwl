@@ -15,7 +15,7 @@ cwlVersion: v1.0
 
 requirements:
 - class: DockerRequirement
-  dockerPull: quay.io/cancercollaboratory/dockstore-tool-samtools-rmdup
+  dockerPull: quay.io/cancercollaboratory/dockstore-tool-samtools-rmdup:1.0
 inputs:
   single_end:
     type: boolean
